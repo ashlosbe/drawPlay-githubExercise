@@ -28,7 +28,7 @@ public class Cat {
 		int y=catY;
 		// Draw the head
 		g2.setColor(Color.orange);
-		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
+		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION*2);
 		// Draw the eyes
 		g2.setColor(Color.red);
 		x = catX + EYE_X; 
@@ -44,6 +44,6 @@ public class Cat {
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
+		g2.drawString("Meow", catX+200, catY+HEAD_DIMENSION+10);	
 	}
 }
